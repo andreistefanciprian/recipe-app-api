@@ -25,10 +25,13 @@ sudo apt-get install docker.io -y
 # use Docker as a non-root user. Log out and back in for this to take effect!
 sudo usermod -aG docker $(whoami)
 
-# create docker base image
+# create docker base container
 docker build .
 
-# create docker app image
+# create docker app container
 docker-compose build
+
+# create django app in docker container
+docker-compose run app sh -c "django-admin.py startproject app ."
 
 ```
