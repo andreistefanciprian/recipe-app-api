@@ -40,3 +40,12 @@ docker-compose run app sh -c "django-admin.py startproject app ."
 ```buildoutcfg
 docker-compose run app sh -c "python manage.py test"
 ```
+
+# Create core app
+```buildoutcfg
+docker-compose run app sh -c "python manage.py startapp core"
+```
+# Create migrations
+```buildoutcfg
+docker-compose run app sh -c "python manage.py makemigrations core"
+```
