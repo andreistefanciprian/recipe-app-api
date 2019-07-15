@@ -36,9 +36,10 @@ docker-compose run app sh -c "django-admin.py startproject app ."
 
 ```
 
-# Run unit tests
+# Run unit and linting tests
 ```buildoutcfg
-docker-compose run app sh -c "python manage.py test"
+docker-compose run app sh -c "python manage.py test && flake8"
+
 ```
 
 # Create core app
