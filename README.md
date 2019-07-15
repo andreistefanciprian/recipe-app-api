@@ -50,3 +50,8 @@ docker-compose run app sh -c "python manage.py startapp core"
 ```buildoutcfg
 docker-compose run app sh -c "python manage.py makemigrations core"
 ```
+
+# Build and start the app
+```bash
+docker-compose up
+```
