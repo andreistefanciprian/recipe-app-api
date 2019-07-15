@@ -55,3 +55,13 @@ docker-compose run app sh -c "python manage.py makemigrations core"
 ```bash
 docker-compose up
 ```
+
+# Create superuserpp
+```bash
+docker-compose run app sh -c "python manage.py createsuperuser"
+```
+
+# Create user app
+```buildoutcfg
+docker-compose run --rm app sh -c "python manage.py startapp user"
+```
